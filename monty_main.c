@@ -44,7 +44,6 @@ int execute(char **token, stack_t **stack, unsigned int line_num)
 	unsigned int i = 0;
 
 	instruction_t op[] = {
-		{"push", monty_push}
 		{"pall", monty_pall},
 		{"pint", monty_pint},
 		/**

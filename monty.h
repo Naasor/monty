@@ -6,6 +6,8 @@
 #include <unistd.h>
 #include <string.h>
 #include <sys/stat.h>
+#include <sys/types.h>
+#include <ctype.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -38,7 +40,6 @@ typedef struct instruction_s
 } instruction_t;
 
 
-
 int main(int ac, char **av);
 
 void free_stack(stack_t **stack);
@@ -50,7 +51,7 @@ int empty_line(char *line, char *delims);
 
 int execute(char **token, stack_t **stack, unsigned int line_num);
 int monty_push(stack_t **stack, char **token, unsigned int line_num);
-/*int monty_pushq(stack_t **stack, char **token, unsigned int line_num);*/
+int monty_pushq(stack_t **stack, char **token, unsigned int line_num);
 void monty_pall(stack_t **stack, unsigned int line_num);
 
 
