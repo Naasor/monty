@@ -1,3 +1,5 @@
+#include "monty.h"
+
 /**
   * monty_push - A function that pushes an element to stack.
   * @stack: The pointer to the stck struct.
